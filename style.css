@@ -277,3 +277,66 @@
 .promo>.card>.img{
     max-width: 189px;
 }
+
+.brands{
+    padding-bottom: 80px;
+}
+
+.brands>.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.brands>.line>.cell{
+    padding: 35px 63px;
+    background-color: var(---white);
+    border: 1px solid var(--lighter-gray);
+}
+
+.footer__nav{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+.footer__nav>.footer__menu>.menu__name{
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: var(--medium);
+    padding-bottom: 30px;
+    padding-right: 156px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+.footer__nav>.footer__menu>.menu-item{
+    color: var(--gray);
+    padding: 5px 10px 5px 0;
+}
+
+.footer>.footer__callback{
+    padding: 37px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer>.footer__callback>.social-media{
+display: flex;
+gap: 20px;
+}
+
+.footer>.footer__rights{
+    background-color: var(--lighter-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 25px 0;
+}
+
+.footer>.footer__rights>.text{
+    color: var(--gray);
+
+}
