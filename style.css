@@ -1,0 +1,216 @@
+:root {
+    --accent: #F13C6E;
+    --dark: #000;
+    ---white: #fff;
+    --whiteOpacity: rbga(255, 255, 255, 0.4);
+    --dark-gray: #333;
+    --gray: #828282;
+    --light-gray: #c4c4c4;
+    --lighter-gray: #efefef;
+    --bold: 700;
+    --medium: 500;
+    --regular: 400;
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: var(--font);
+    border: none;
+    background: transparent;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: var(--lighter-gray);
+}
+
+.nav>.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav>.menu>.menu-item {
+    padding: 17px 10px;
+    font-weight: var(--regular);
+    color: var(--dark-gray);
+}
+
+.nav2 {
+    background-color: var(---white);
+    border-top: 1px solid var(--lighter-gray);
+}
+
+.nav2>.menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav2>.menu2>.menu-item2 {
+    padding: 30px 15px;
+    font-weight: var(--regular);
+}
+
+.callback {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo>.logo__text {
+    text-transform: uppercase;
+    color: var(--accent);
+    font-size: 36px;
+    font-weight: var(--bold);
+    letter-spacing: 3.6px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta>a {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: var(--regular);
+}
+
+.cta>.cta__btn {
+    color: var(--dark);
+    font-weight: var(--regular);
+    border: 2px solid var(--accent);
+    background-color: var(---white);
+    border-radius: 40px;
+    padding: 8px 50px;
+}
+
+.sale {
+    background-image: url(./images/Rectangle\ 2.jpg);
+    height: 604px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sale>.sale__info {
+    padding: 183px 0;
+    padding-left: 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+.sale>.sale__info>.sale__title {
+    color: var(---white);
+    font-size: 48px;
+    font-weight: var(--bold);
+}
+
+.sale>.sale__info>.sale__subtitle {
+    color: var(---white);
+    font-weight: var(--regular);
+    line-height: 25px;
+}
+
+.sale>.sale__info>.sale__btn {
+    color: var(---white);
+    text-align: center;
+    padding: 12px 70px;
+    border: 2px solid var(---white);
+    border-radius: 40px;
+}
+
+.special{
+    background-color: var(--lighter-gray);
+    padding: 80px 0;
+    width: 100%;
+  }
+  
+  .container{
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .goods{
+    background-color: var(--lighter-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .goods > .title{
+    background-color: var(--lighter-gray);
+    font-weight: var(--bold);
+    font-size: 24px;
+    padding-bottom: 38px;
+    align-self: center;
+    width: 80%;
+  }
+  
+  .goods > .goods-list{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .goods > .goods-list > .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 20px;
+    background-color: var(---white);
+  }
+  
+  .goods > .goods-list > .item > img{
+    width: 125px;
+  }
+  
+  .goods > .goods-list > .item > .name{
+    color: var(--dark-gray);
+    font-weight: var(--regular);
+    line-height: 140%;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .goods > .goods-list > .item > .price{
+    color: var(--dark);
+    font-weight: var(--medium);
+    text-align: center;
+    letter-spacing: 1.05px;
+    font-size: 21px;
+  }
+  
+  .goods > .goods-list > .item > .btn{
+    border-radius: 30px;
+    background-color: var(--accent);
+    color: var(---white);
+    font-weight: var(--regular);
+    letter-spacing: 0.7px;
+    padding: 9px 53px;
+  }
