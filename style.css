@@ -214,3 +214,66 @@
     letter-spacing: 0.7px;
     padding: 9px 53px;
   }
+
+  .promo{
+    display: flex;
+    gap: 45px;
+    width: 90%;
+    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  .promo > .card{
+    background-color: var(--accent);
+    padding: 35px 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .promo > .card > .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .promo > .card > .content > .name{
+    color: var(---white);
+    font-weight: var(--bold);
+    font-size: 18px;
+  }
+
+  .promo > .card > .content > .text{
+    color: var(---white);
+    font-weight: var(--regular);
+    width: 60%;
+    line-height: 155%;
+  }
+
+  .promo > .card > .content > .promo__input{
+    font-weight: var(--regular);
+    width: 225px;
+    padding: 9px 0 9px 25px;
+    color: var(--dark);
+    background-color: var(---white);
+    border-radius: 30px;
+  }
+
+  .promo > .card > .content > .promo__input::placeholder{
+    color: var(--light-gray);
+  }
+
+  .promo > .card > .content > .promo__btn{
+    color: var(---white);
+    font-weight: var(--regular);
+    border: 2px solid var(---white);
+    border-radius: 30px;
+    padding: 9px 53px;
+  }
+
+.promo>.card>.img{
+    max-width: 189px;
+}
