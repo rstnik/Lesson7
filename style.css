@@ -171,7 +171,7 @@
   .goods > .goods-list{
     display: flex;
     gap: 30px;
-    width: 80%;
+    width: 90%;
     align-items: center;
     justify-content: center;
   }
@@ -227,9 +227,9 @@
 
   .promo > .card{
     background-color: var(--accent);
-    padding: 35px 40px;
+    padding: 25px 30px;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
   }
 
@@ -280,6 +280,7 @@
 
 .brands{
     padding-bottom: 80px;
+    max-width: 100%;
 }
 
 .brands>.line{
@@ -288,7 +289,7 @@
 }
 
 .brands>.line>.cell{
-    padding: 35px 63px;
+    padding: 35px 57px;
     background-color: var(---white);
     border: 1px solid var(--lighter-gray);
 }
@@ -296,24 +297,31 @@
 .footer__nav{
     padding: 60px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 30px;
     border-bottom: 1px solid var(--lighter-gray);
 }
 
-.footer__nav>.footer__menu>.menu__name{
+.footer-title{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  gap: 30px;
+}
+
+.footer-title>.menu__name{
     font-size: 16px;
     line-height: 170%;
     font-weight: var(--medium);
-    padding-bottom: 30px;
-    padding-right: 156px;
-    margin-bottom: 25px;
+    padding: 20px 0px;
+    padding-right: 50px;
     border-bottom: 1px solid var(--lighter-gray);
 }
 
 .footer__nav>.footer__menu>.menu-item{
     color: var(--gray);
-    padding: 5px 10px 5px 0;
+    padding: 10px 0px;
+    padding-right: 50px;
 }
 
 .footer>.footer__callback{
