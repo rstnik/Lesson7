@@ -4,3 +4,10 @@
     align-items: $ai;
     gap: $gp;
 }
+
+@mixin Roboto($cl,$fs,$fw){
+    font-family: $font;
+    color: $cl;
+    font-size: $fs;
+    font-weight: $fw;
+}

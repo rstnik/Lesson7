@@ -1,12 +1,270 @@
-@import url(./colors.scss);
-@import url(./fonts.scss);
-@import url(./mixins.scss);
+@import './colors.scss';
+@import './fonts.scss';
+@import './mixins.scss';
 
-*{
-margin: 0;
-padding: 0;
-border: none;
-background: transparent;
-list-style-type: none;
-text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: $regular;
+    color: $dark;
+}
+
+.nav {
+    background-color: $lighter-gray;
+
+    .menu {
+        @include flex(center, center, 10px);
+
+        &-item {
+            padding: 17px 10px;
+            color: $dark-gray;
+        }
+    }
+}
+
+.nav2 {
+    background-color: $white;
+    border-top: 1px solid $light-gray;
+
+    .menu2 {
+        @include flex(center, center, 10px);
+
+        &-item {
+            padding: 30px 15px;
+        }
+    }
+}
+
+.btn {
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 8px 50px;
+    text-align: center;
+}
+
+.callback {
+    @include flex(space-around, center, 0);
+    padding: 20px 0;
+
+    .logo {
+        @include flex(center, center, 20px);
+
+        &-text {
+            @include Roboto($accent, 36px, $bold);
+            text-transform: uppercase;
+            letter-spacing: 3.6px;
+        }
+    }
+}
+
+.cta {
+    @include flex(center, center, 40px);
+
+    a {
+        font-size: 16px;
+    }
+
+    &__btn {
+        border-color: $accent;
+        background-color: $white;
+    }
+}
+
+.sale {
+    background-image: url(../images/Rectangle\ 2.jpg);
+    height: 604px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .sale__info {
+        @include flex(none, start, 30px);
+        flex-direction: column;
+        padding: 183px 0;
+        padding-left: 405px;
+
+        .sale__title {
+            @include Roboto($white, 48px, $bold);
+        }
+
+        .sale__subtitle {
+            color: $white;
+            line-height: 25px;
+        }
+
+        &__btn {
+            border-color: $white;
+            color: $white;
+            padding: 12px 70px;
+        }
+    }
+}
+
+.special {
+    background-color: $lighter-gray;
+    padding: 80px 0;
+    width: 100%;
+
+    .container {
+        padding: 0 15px;
+        @include flex(none, center, 0);
+        flex-direction: column;
+
+        .goods {
+            @include flex(none, center, 0);
+            flex-direction: column;
+            width: 100%;
+
+            .title {
+                @include Roboto(none, 24px, $bold);
+                padding-bottom: 38px;
+                align-self: center;
+                width: 88%;
+            }
+
+            .goods-list {
+                @include flex(center, center, 30px);
+                width: 90%;
+
+                .item {
+                    @include flex(center, center, 20px);
+                    flex-direction: column;
+                    padding: 25px;
+                    background-color: $white;
+
+                    &-img {
+                        width: 125px;
+                    }
+
+                    &-name {
+                        color: $dark-gray;
+                        line-height: 140%;
+                        text-align: center;
+                        width: 80%;
+                    }
+
+                    &-price {
+                        @include Roboto($dark, 21px, $medium);
+                        text-align: center;
+                        letter-spacing: 1.05px;
+                    }
+
+                    &-btn {
+                        border-radius: 30px;
+                        border-color: $accent;
+                        background-color: $accent;
+                        color: $white;
+                        letter-spacing: 0.7px;
+                        padding: 9px 53px;
+                    }
+                }
+            }
+        }
+
+        .promo {
+            @include flex(center, stretch, 45px);
+            width: 90%;
+            margin: 100px 0;
+
+            .card {
+                @include flex(none, center, 30px);
+                background-color: $accent;
+                padding: 25px 30px;
+
+                .img {
+                    max-width: 189px;
+                }
+
+                .content {
+                    @include flex(none, flex-start, 20px);
+                    flex-direction: column;
+
+                    &-name {
+                        @include Roboto($white, 18px, $bold);
+                    }
+
+                    &-text {
+                        @include Roboto($white, none, $regular);
+                        width: 60%;
+                        line-height: 155%;
+                    }
+
+                    &-promo__input {
+                        width: 225px;
+                        padding: 9px 0 9px 25px;
+                        background-color: $white;
+                        border-radius: 30px;
+                    }
+
+                    &-promo__input::placeholder {
+                        color: $light-gray;
+                    }
+
+                    &-promo__btn {
+                        color: $white;
+                        border-color: $white;
+                        border-radius: 30px;
+                        padding: 9px 53px;
+                    }
+                }
+
+            }
+        }
+        .brands{
+            padding-bottom: 80px;
+            max-width: 100%;
+            .line{
+                display: flex;
+                flex-direction: row;
+                &-cell{
+                    padding: 35px 57px;
+                    background-color: $white;
+                    border: 1px solid $lighter-gray;
+                }
+            }
+        }
+    }
+}
+.footer{
+    .title{
+        @include flex(space-evenly,none,30px);
+        padding-top: 40px;
+        &-item{
+            @include Roboto(none,16px,$medium);
+            line-height: 170%;
+            padding: 20px 50px 20px 0;
+            border-bottom: 1px solid $lighter-gray;
+        }
+    }
+    .footer__nav{
+        @include flex(space-evenly,none,30px);
+        padding: 60px 0;
+        border-bottom: 1px solid $lighter-gray;
+        .footer__menu{
+            &-item{
+                color: $gray;
+                padding: 10px 50px 10px 0;
+            }
+        }
+    }
+    .footer__callback{
+        @include flex(space-around,center,0);
+        padding: 37px 0;
+        .social__media{
+            @include flex(none,none,20px);
+        }
+    }
+    .footer__rights{
+        @include flex(space-around,center,0);
+        background-color: $lighter-gray;
+        padding: 25px 0;
+        &-text{
+            color: $gray;
+        }
+    }
 }
