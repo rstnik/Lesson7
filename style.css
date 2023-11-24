@@ -107,10 +107,12 @@
     height: 604px;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    min-height: 604px;
+    align-items: center;
 }
 
 .sale>.sale__info {
-    padding: 183px 0;
     padding-left: 405px;
     display: flex;
     flex-direction: column;
@@ -165,7 +167,7 @@
     font-size: 24px;
     padding-bottom: 38px;
     align-self: center;
-    width: 80%;
+    width: 88%;
   }
   
   .goods > .goods-list{
@@ -298,30 +300,35 @@
     padding: 60px 0;
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;
+    align-items: center;
     border-bottom: 1px solid var(--lighter-gray);
 }
 
-.footer-title{
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 40px;
-  gap: 30px;
+.footer__nav>.footer__nav-column{
+display: flex;
+flex-direction: column;
 }
 
-.footer-title>.menu__name{
-    font-size: 16px;
-    line-height: 170%;
-    font-weight: var(--medium);
-    padding: 20px 0px;
-    padding-right: 50px;
-    border-bottom: 1px solid var(--lighter-gray);
+.footer__nav>.footer__nav-column>.footer__title{
+  border-bottom: 1px solid var(--lighter-gray);
+  width: 200%;
+  margin-left: 10px;
 }
 
-.footer__nav>.footer__menu>.menu-item{
-    color: var(--gray);
-    padding: 10px 0px;
-    padding-right: 50px;
+.footer__nav>.footer__nav-column>.footer__title>.title{
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__nav>.footer__nav-column>.footer__menu{
+  margin-top: 25px;
+}
+
+.footer__nav>.footer__nav-column>.footer__menu>.menu-item{
+  padding: 10px 15px;
+  color: var(--gray);
+  font-size: 12px;
 }
 
 .footer>.footer__callback{
